@@ -2,13 +2,10 @@
 title: Getting Started | Guide
 ---
 
-# Getting Started
+# はじめに
 
-## Overview
-
-Vitest (pronounced as _"veetest"_) is a next generation testing framework
-powered by
-Vite.
+## 概要
+Vitest (_"veetest"_ と発音します) 次世代のテストフレームワークです。Vite が提供しています。
 
 You can learn more about the rationale behind the project in the [Why Vitest](/guide/why) section.
 
