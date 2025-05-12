@@ -33,16 +33,16 @@ bun add -D vitest
 :::
 
 :::tip
-Vitest requires Vite >=v5.0.0 and Node >=v18.0.0
+Vitest は、Vite v5.0.0 以上かつ Node v18.0.0 以上が必要です。
 :::
 
-It is recommended that you install a copy of `vitest` in your `package.json`, using one of the methods listed above. However, if you would prefer to run `vitest` directly, you can use `npx vitest` (the `npx` tool comes with npm and Node.js).
+`package.json` に `vitest` のコピーをインストールすることが推奨されています。インストールするには、上記のメソッドを使用します。`vitest` を直接実行したい場合は、`npx vitest` を使用することができます。(`npx` は npm や Node.js に同梱されているツールです)
 
-The `npx` tool will execute the specified command. By default, `npx` will first check if the command exists in the local project's binaries. If it is not found there, `npx` will look in the system's `$PATH` and execute it if found. If the command is not found in either location, `npx` will install it in a temporary location prior to execution.
+`npx` は指定したコマンドを実行します。デフォルトでは、`npx` は初めに、コマンドがローカルプロジェクトのバイナリ一覧に存在するかどうかをチェックします。もしなければ、`npx` はシステムの `$PATH` を検索し、見つかった場合はそれを実行します。コマンドがどちらの場所にも見つからなかった場合、`npx` は、実行に適した一時的な場所にインストールします。
 
-## Writing Tests
+## Tests 記述する
 
-As an example, we will write a simple test that verifies the output of a function that adds two numbers.
+サンプルとして、２つの数値を足し算する関数の出力を確認する簡単なテストを書いてみます。
 
 ``` js [sum.js]
 export function sum(a, b) {
@@ -60,10 +60,10 @@ test('adds 1 + 2 to equal 3', () => {
 ```
 
 ::: tip
-By default, tests must contain `.test.` or `.spec.` in their file name.
+デフォルトでは、テストはファイル名に `.test.` または `.spec.` を含んでいる必要があります。
 :::
 
-Next, in order to execute the test, add the following section to your `package.json`:
+次に、テストを実行するために、`package.json` に次のセクションを追加します:
 
 ```json [package.json]
 {
@@ -73,7 +73,7 @@ Next, in order to execute the test, add the following section to your `package.j
 }
 ```
 
-Finally, run `npm run test`, `yarn test` or `pnpm test`, depending on your package manager, and Vitest will print this message:
+最後に、`npm run test` または `yarn test` または `pnpm test` どれかを実行します。どれを実行するかはパッケージマネジャーに依ります。Vitest は次のようなメッセージを表示します:
 
 ```txt
 ✓ sum.test.js (1)
@@ -86,10 +86,10 @@ Test Files  1 passed (1)
 ```
 
 ::: warning
-If you are using Bun as your package manager, make sure to use `bun run test` command instead of `bun test`, otherwise Bun will run its own test runner.
+パッケージマネージャーとして Bun を使用している場合、`bun test` の代わりに `bun run test` を使ってください。そうしないと、Bun は自身のテストランナーを実行してしまいます。
 :::
 
-Learn more about the usage of Vitest, see the [API](https://vitest.dev/api/) section.
+Vitest の使用方法について学ぶには、[API](https://vitest.dev/api/) を参照してください。
 
 ## Configuring Vitest
 
