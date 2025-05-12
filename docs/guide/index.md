@@ -7,15 +7,15 @@ title: Getting Started | Guide
 ## 概要
 Vitest (_"veetest"_ と発音します) 次世代のテストフレームワークです。Vite が提供しています。
 
-You can learn more about the rationale behind the project in the [Why Vitest](/guide/why) section.
+[Why Vitest](/guide/why) でプロジェクトの背後にある根拠について、より学ぶことができます。
 
-## Trying Vitest Online
+## Vitest をオンラインで使ってみる
 
-You can try Vitest online on [StackBlitz](https://vitest.new). It runs Vitest directly in the browser, and it is almost identical to the local setup but doesn't require installing anything on your machine.
+[StackBlitz](https://vitest.new) で Vitest をオンラインで試してみることができます。ブラウザで直接 Vitest を実行しますが、ローカルで実行したものとほぼ同じです。PC に何もインストールする必要がありません。
 
-## Adding Vitest to Your Project
+## プロジェクトに Vitest を追加する
 
-<CourseLink href="https://vueschool.io/lessons/how-to-install-vitest?friend=vueuse">Learn how to install by Video</CourseLink>
+<CourseLink href="https://vueschool.io/lessons/how-to-install-vitest?friend=vueuse">動画でインストール方法を学ぶ</CourseLink>
 
 ::: code-group
 ```bash [npm]
